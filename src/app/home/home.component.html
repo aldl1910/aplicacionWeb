@@ -1,0 +1,13 @@
+<ng-container *ngFor="let documentTienda of arrayClientesDatos">
+    <button mat-button routerLink="/lista">
+    <mat-card class="tarjetas"   (click)="selecCliente(documentTienda)">
+        
+            <mat-card-content>
+                <h2>{{documentTienda.data.nombre}}</h2>
+                <p>{{documentTienda.data.apellidos}}</p>
+          
+            </mat-card-content>
+        
+    </mat-card>
+</button>
+</ng-container>
